@@ -271,7 +271,7 @@ fn generate_pagination_html(current_page: usize, total_pages: usize, page_size: 
         pagination_html.push_str("<div class='pagination'>");
         
         if current_page > 1 {
-            pagination_html.push_str(&format!("<a href='{}&page_size={}&page={}'>Previous</a> ", 
+            pagination_html.push_str(&format!("<a href='{}?page_size={}&page={}'>Previous</a> ", 
                 base_url, page_size, current_page - 1));
         }
         
@@ -282,13 +282,13 @@ fn generate_pagination_html(current_page: usize, total_pages: usize, page_size: 
             if i == current_page {
                 pagination_html.push_str(&format!("<span>{}</span> ", i));
             } else {
-                pagination_html.push_str(&format!("<a href='{}&page_size={}&page={}'>{}</a> ", 
+                pagination_html.push_str(&format!("<a href='{}?page_size={}&page={}'>{}</a> ", 
                     base_url, page_size, i, i));
             }
         }
         
         if current_page < total_pages {
-            pagination_html.push_str(&format!("<a href='{}&page_size={}&page={}'>Next</a>", 
+            pagination_html.push_str(&format!("<a href='{}?page_size={}&page={}'>Next</a>", 
                 base_url, page_size, current_page + 1));
         }
         
@@ -297,6 +297,7 @@ fn generate_pagination_html(current_page: usize, total_pages: usize, page_size: 
     
     pagination_html
 }
+
 
 
 async fn play(
