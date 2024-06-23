@@ -5,7 +5,8 @@ Locally run program to solve the issue of very large m3u playlists not loading w
 
 
 
-![image](https://github.com/EMRD95/m3u_playlist_browser/assets/114953576/752dd51a-fb6a-45a9-a4c6-df02f7d36f25)
+![image](https://github.com/EMRD95/m3u_playlist_browser/assets/114953576/fe4c27db-4c26-48e6-af47-c878874f9195)
+
 
 
 To use right now, go to the release page: https://github.com/EMRD95/m3u_playlist_browser/releases
